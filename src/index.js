@@ -1,8 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import reportWebVitals from './reportWebVitals'
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import './index.css';
+// import App from './App';
+;
 
 // ReactDOM --> virtualDOM
 
@@ -26,29 +28,31 @@ const xyz = () => {
 }
 
 
-const obj = {
-  name:"yogesh",
-  age:25,
-  work:()=>{
-    console.log("dancing")
-  }
-}
+// const obj = {
+//   name:"yogesh",
+//   age:25,
+//   work:()=>{
+//     console.log("dancing")
+//   }
+// }
+
+
+
+// component --> it is javascript function which return JSX
+// rule to make component
+// name of components first will capital
+
+
+
+
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-<>
-<h1>{name} hello </h1>
-<h2>my name is yogesh </h2>
-<>{printinfo()}</>
-<>{abc()}</>
-<>{xyz()}</>
-<>{obj.work()}</>
-
-</>
-
-
+    <App/>
 );
 
 // If you want to start measuring performance in your app, pass a function
